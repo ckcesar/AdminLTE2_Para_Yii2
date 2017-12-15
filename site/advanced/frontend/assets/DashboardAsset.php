@@ -7,19 +7,22 @@ use yii\web\AssetBundle;
 /**
  * Main frontend application asset bundle.
  */
-class AppAsset extends AssetBundle
+class DashboardAsset extends AssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/bootstrap.min.css',
         'css/site.css',
     ];
     public $js = [
-        'js/jquery.js'
+        'js/raphael.min.js',
+        'js/jquery.sparkline.min.js',
+        'js/jquery.slimscroll.min.js',
+        'js/fastclick.min.js',
+        'js/dashboard.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
+        //'yii\bootstrap\BootstrapAsset',
     ];
 }
